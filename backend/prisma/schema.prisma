@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPER_ADMIN
+  HR_MANAGER
+  EMPLOYEE
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+}
+
+model Employee {
+  id              String    @id @default(uuid())
+  employeeCode    String    @unique
+  name            String
+  email           String    @unique
+  phone           String
+  passwordHash    String
+  department      String
+  designation     String
+  salary          Float
+  joiningDate     DateTime
+  status          Status    @default(ACTIVE)
+  role            Role      @default(EMPLOYEE)
+  profileImageUrl String?
+
+  managerId       String?
+  manager         Employee?  @relation("ManagerReports", fields: [managerId], references: [id])
+  directReports   Employee[] @relation("ManagerReports")
+
+  isDeleted       Boolean   @default(false)
+  deletedAt       DateTime?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([department])
+  @@index([status])
+  @@index([managerId])
+}
