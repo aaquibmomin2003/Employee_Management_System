@@ -17,8 +17,10 @@ export interface AuthUser {
 interface AuthState {
   token: string | null;
   user: AuthUser | null;
+  hasHydrated: boolean;
   setAuth: (token: string, user: AuthUser) => void;
   logout: () => void;
+  setHasHydrated: (state: boolean) => void;
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -26,11 +28,16 @@ export const useAuthStore = create<AuthState>()(
     (set) => ({
       token: null,
       user: null,
+      hasHydrated: false,
       setAuth: (token, user) => set({ token, user }),
       logout: () => set({ token: null, user: null }),
+      setHasHydrated: (state) => set({ hasHydrated: state }),
     }),
     {
-      name: 'ems-auth-storage', // key in localStorage
+      name: 'ems-auth-storage',
+      onRehydrateStorage: () => (state) => {
+        state?.setHasHydrated(true);
+      },
     }
   )
 );
