@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import ProtectedRoute from '@/components/ProtectedRoute';
 import api from '@/lib/axios';
@@ -40,6 +40,11 @@ function EmployeeListContent() {
   const [order, setOrder] = useState('desc');
   const [page, setPage] = useState(1);
 
+  // CSV import
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [importMessage, setImportMessage] = useState('');
+  const [importing, setImporting] = useState(false);
+
   const fetchEmployees = useCallback(async () => {
     setLoading(true);
     try {
@@ -69,6 +74,30 @@ function EmployeeListContent() {
 
   const canCreate = user?.role === 'SUPER_ADMIN' || user?.role === 'HR_MANAGER';
 
+  const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setImporting(true);
+    setImportMessage('');
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+      const response = await api.post('/import/employees', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      });
+      setImportMessage(response.data.message);
+      fetchEmployees(); // refresh the list to show newly imported employees
+    } catch (err: any) {
+      setImportMessage(err.response?.data?.message || 'Import failed');
+    } finally {
+      setImporting(false);
+      if (fileInputRef.current) fileInputRef.current.value = ''; // allow re-selecting the same file
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="flex justify-between items-center mb-6">
@@ -78,12 +107,32 @@ function EmployeeListContent() {
             Dashboard
           </Link>
           {canCreate && (
-            <Link href="/employees/new" className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              + Add Employee
-            </Link>
+            <>
+              <input
+                type="file"
+                accept=".csv"
+                ref={fileInputRef}
+                onChange={handleFileSelect}
+                className="hidden"
+              />
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                disabled={importing}
+                className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition disabled:opacity-50"
+              >
+                {importing ? 'Importing...' : 'Import CSV'}
+              </button>
+              <Link href="/employees/new" className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+                + Add Employee
+              </Link>
+            </>
           )}
         </div>
       </div>
+
+      {importMessage && (
+        <p className="mb-4 px-4 py-2 bg-blue-50 text-blue-700 rounded-md text-sm">{importMessage}</p>
+      )}
 
       {/* Filters */}
       <div className="bg-white p-4 rounded-lg shadow-sm mb-4 flex flex-wrap gap-3">
@@ -213,3 +262,5 @@ export default function EmployeeListPage() {
     </ProtectedRoute>
   );
 }
+
+

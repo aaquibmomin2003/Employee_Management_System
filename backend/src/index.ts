@@ -5,6 +5,8 @@ import authRoutes from './routes/auth.routes';
 import employeeRoutes from './routes/employee.routes';
 import organizationRoutes from './routes/organization.routes';
 import dashboardRoutes from './routes/dashboard.routes';
+import importRoutes from './routes/import.routes';
+
 
 dotenv.config();
 
@@ -21,6 +23,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/employees', employeeRoutes);
 app.use('/api/organization', organizationRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/import', importRoutes);
 
 const PORT = process.env.PORT || 5000;
 

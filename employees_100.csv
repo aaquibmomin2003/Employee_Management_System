@@ -1,0 +1,101 @@
+employeeCode,name,email,phone,password,department,designation,salary,joiningDate,role
+EMP001,Aarav Sharma,aarav.sharma1@ems.com,9000000001,Pass@123,Engineering,Software Engineer,36750,2026-01-01,EMPLOYEE
+EMP002,Diya Patel,diya.patel2@ems.com,9000000002,Pass@123,HR,HR Executive,38500,2026-01-02,EMPLOYEE
+EMP003,Rohan Verma,rohan.verma3@ems.com,9000000003,Pass@123,Sales,Sales Executive,40250,2026-01-03,EMPLOYEE
+EMP004,Ananya Singh,ananya.singh4@ems.com,9000000004,Pass@123,Marketing,Marketing Executive,42000,2026-01-04,EMPLOYEE
+EMP005,Vivaan Mehta,vivaan.mehta5@ems.com,9000000005,Pass@123,Finance,Accountant,43750,2026-01-05,EMPLOYEE
+EMP006,Isha Kapoor,isha.kapoor6@ems.com,9000000006,Pass@123,Operations,Operations Executive,45500,2026-01-06,EMPLOYEE
+EMP007,Arjun Nair,arjun.nair7@ems.com,9000000007,Pass@123,Support,Support Engineer,47250,2026-01-07,EMPLOYEE
+EMP008,Saanvi Joshi,saanvi.joshi8@ems.com,9000000008,Pass@123,IT,System Administrator,49000,2026-01-08,EMPLOYEE
+EMP009,Kabir Rao,kabir.rao9@ems.com,9000000009,Pass@123,Engineering,Software Engineer,50750,2026-01-09,EMPLOYEE
+EMP010,Meera Iyer,meera.iyer10@ems.com,9000000010,Pass@123,HR,HR Executive,52500,2026-01-10,EMPLOYEE
+EMP011,Aditya Kulkarni,aditya.kulkarni11@ems.com,9000000011,Pass@123,Sales,Sales Executive,54250,2026-01-11,EMPLOYEE
+EMP012,Priya Desai,priya.desai12@ems.com,9000000012,Pass@123,Marketing,Marketing Executive,56000,2026-01-12,EMPLOYEE
+EMP013,Rahul Gupta,rahul.gupta13@ems.com,9000000013,Pass@123,Finance,Accountant,57750,2026-01-13,EMPLOYEE
+EMP014,Nisha Reddy,nisha.reddy14@ems.com,9000000014,Pass@123,Operations,Operations Executive,59500,2026-01-14,EMPLOYEE
+EMP015,Siddharth Jain,siddharth.jain15@ems.com,9000000015,Pass@123,Support,Support Engineer,61250,2026-01-15,EMPLOYEE
+EMP016,Aisha Khan,aisha.khan16@ems.com,9000000016,Pass@123,IT,System Administrator,63000,2026-01-16,EMPLOYEE
+EMP017,Manav Chawla,manav.chawla17@ems.com,9000000017,Pass@123,Engineering,Software Engineer,64750,2026-01-17,EMPLOYEE
+EMP018,Neha Mishra,neha.mishra18@ems.com,9000000018,Pass@123,HR,HR Executive,66500,2026-01-18,EMPLOYEE
+EMP019,Ritvik Malhotra,ritvik.malhotra19@ems.com,9000000019,Pass@123,Sales,Sales Executive,68250,2026-01-19,EMPLOYEE
+EMP020,Kavya Menon,kavya.menon20@ems.com,9000000020,Pass@123,Marketing,Marketing Executive,70000,2026-01-20,EMPLOYEE
+EMP021,Yash Agarwal,yash.agarwal21@ems.com,9000000021,Pass@123,Finance,Accountant,71750,2026-02-01,EMPLOYEE
+EMP022,Tanya Bansal,tanya.bansal22@ems.com,9000000022,Pass@123,Operations,Operations Executive,73500,2026-02-02,EMPLOYEE
+EMP023,Rajesh Kumar,rajesh.kumar23@ems.com,9000000023,Pass@123,Support,Support Engineer,75250,2026-02-03,EMPLOYEE
+EMP024,Simran Kaur,simran.kaur24@ems.com,9000000024,Pass@123,IT,System Administrator,77000,2026-02-04,EMPLOYEE
+EMP025,Karan Shah,karan.shah25@ems.com,9000000025,Pass@123,Engineering,Software Engineer,78750,2026-02-05,EMPLOYEE
+EMP026,Pooja Yadav,pooja.yadav26@ems.com,9000000026,Pass@123,HR,HR Executive,80500,2026-02-06,EMPLOYEE
+EMP027,Harsh Vora,harsh.vora27@ems.com,9000000027,Pass@123,Sales,Sales Executive,82250,2026-02-07,EMPLOYEE
+EMP028,Riya Bose,riya.bose28@ems.com,9000000028,Pass@123,Marketing,Marketing Executive,84000,2026-02-08,EMPLOYEE
+EMP029,Aniket Patil,aniket.patil29@ems.com,9000000029,Pass@123,Finance,Accountant,85750,2026-02-09,EMPLOYEE
+EMP030,Shruti Roy,shruti.roy30@ems.com,9000000030,Pass@123,Operations,Operations Executive,87500,2026-02-10,EMPLOYEE
+EMP031,Dev Arora,dev.arora31@ems.com,9000000031,Pass@123,Support,Support Engineer,89250,2026-02-11,EMPLOYEE
+EMP032,Khushi Tiwari,khushi.tiwari32@ems.com,9000000032,Pass@123,IT,System Administrator,91000,2026-02-12,EMPLOYEE
+EMP033,Ayush Sethi,ayush.sethi33@ems.com,9000000033,Pass@123,Engineering,Software Engineer,92750,2026-02-13,EMPLOYEE
+EMP034,Muskan Bhat,muskan.bhat34@ems.com,9000000034,Pass@123,HR,HR Executive,94500,2026-02-14,EMPLOYEE
+EMP035,Nikhil Pillai,nikhil.pillai35@ems.com,9000000035,Pass@123,Sales,Sales Executive,96250,2026-02-15,EMPLOYEE
+EMP036,Sneha Das,sneha.das36@ems.com,9000000036,Pass@123,Marketing,Marketing Executive,98000,2026-02-16,EMPLOYEE
+EMP037,Aman Ghosh,aman.ghosh37@ems.com,9000000037,Pass@123,Finance,Accountant,99750,2026-02-17,EMPLOYEE
+EMP038,Palak Chopra,palak.chopra38@ems.com,9000000038,Pass@123,Operations,Operations Executive,101500,2026-02-18,EMPLOYEE
+EMP039,Sahil Sen,sahil.sen39@ems.com,9000000039,Pass@123,Support,Support Engineer,103250,2026-02-19,EMPLOYEE
+EMP040,Ishita Sinha,ishita.sinha40@ems.com,9000000040,Pass@123,IT,System Administrator,105000,2026-02-20,EMPLOYEE
+EMP041,Varun Pandey,varun.pandey41@ems.com,9000000041,Pass@123,Engineering,Software Engineer,106750,2026-03-01,EMPLOYEE
+EMP042,Ritika Prakash,ritika.prakash42@ems.com,9000000042,Pass@123,HR,HR Executive,108500,2026-03-02,EMPLOYEE
+EMP043,Om Nanda,om.nanda43@ems.com,9000000043,Pass@123,Sales,Sales Executive,110250,2026-03-03,EMPLOYEE
+EMP044,Shreya Ali,shreya.ali44@ems.com,9000000044,Pass@123,Marketing,Marketing Executive,112000,2026-03-04,EMPLOYEE
+EMP045,Abhishek Khan,abhishek.khan45@ems.com,9000000045,Pass@123,Finance,Accountant,113750,2026-03-05,EMPLOYEE
+EMP046,Nandini More,nandini.more46@ems.com,9000000046,Pass@123,Operations,Operations Executive,115500,2026-03-06,EMPLOYEE
+EMP047,Farhan Sawant,farhan.sawant47@ems.com,9000000047,Pass@123,Support,Support Engineer,117250,2026-03-07,EMPLOYEE
+EMP048,Zoya Shaikh,zoya.shaikh48@ems.com,9000000048,Pass@123,IT,System Administrator,119000,2026-03-08,EMPLOYEE
+EMP049,Rakesh Momin,rakesh.momin49@ems.com,9000000049,Pass@123,Engineering,Software Engineer,35750,2026-03-09,EMPLOYEE
+EMP050,Pallavi Pathan,pallavi.pathan50@ems.com,9000000050,Pass@123,HR,HR Executive,37500,2026-03-10,EMPLOYEE
+EMP051,Aarav Sharma,aarav.sharma51@ems.com,9000000051,Pass@123,Sales,Sales Executive,39250,2026-03-11,EMPLOYEE
+EMP052,Diya Patel,diya.patel52@ems.com,9000000052,Pass@123,Marketing,Marketing Executive,41000,2026-03-12,EMPLOYEE
+EMP053,Rohan Verma,rohan.verma53@ems.com,9000000053,Pass@123,Finance,Accountant,42750,2026-03-13,EMPLOYEE
+EMP054,Ananya Singh,ananya.singh54@ems.com,9000000054,Pass@123,Operations,Operations Executive,44500,2026-03-14,EMPLOYEE
+EMP055,Vivaan Mehta,vivaan.mehta55@ems.com,9000000055,Pass@123,Support,Support Engineer,46250,2026-03-15,EMPLOYEE
+EMP056,Isha Kapoor,isha.kapoor56@ems.com,9000000056,Pass@123,IT,System Administrator,48000,2026-03-16,EMPLOYEE
+EMP057,Arjun Nair,arjun.nair57@ems.com,9000000057,Pass@123,Engineering,Software Engineer,49750,2026-03-17,EMPLOYEE
+EMP058,Saanvi Joshi,saanvi.joshi58@ems.com,9000000058,Pass@123,HR,HR Executive,51500,2026-03-18,EMPLOYEE
+EMP059,Kabir Rao,kabir.rao59@ems.com,9000000059,Pass@123,Sales,Sales Executive,53250,2026-03-19,EMPLOYEE
+EMP060,Meera Iyer,meera.iyer60@ems.com,9000000060,Pass@123,Marketing,Marketing Executive,55000,2026-03-20,EMPLOYEE
+EMP061,Aditya Kulkarni,aditya.kulkarni61@ems.com,9000000061,Pass@123,Finance,Accountant,56750,2026-04-01,EMPLOYEE
+EMP062,Priya Desai,priya.desai62@ems.com,9000000062,Pass@123,Operations,Operations Executive,58500,2026-04-02,EMPLOYEE
+EMP063,Rahul Gupta,rahul.gupta63@ems.com,9000000063,Pass@123,Support,Support Engineer,60250,2026-04-03,EMPLOYEE
+EMP064,Nisha Reddy,nisha.reddy64@ems.com,9000000064,Pass@123,IT,System Administrator,62000,2026-04-04,EMPLOYEE
+EMP065,Siddharth Jain,siddharth.jain65@ems.com,9000000065,Pass@123,Engineering,Software Engineer,63750,2026-04-05,EMPLOYEE
+EMP066,Aisha Khan,aisha.khan66@ems.com,9000000066,Pass@123,HR,HR Executive,65500,2026-04-06,EMPLOYEE
+EMP067,Manav Chawla,manav.chawla67@ems.com,9000000067,Pass@123,Sales,Sales Executive,67250,2026-04-07,EMPLOYEE
+EMP068,Neha Mishra,neha.mishra68@ems.com,9000000068,Pass@123,Marketing,Marketing Executive,69000,2026-04-08,EMPLOYEE
+EMP069,Ritvik Malhotra,ritvik.malhotra69@ems.com,9000000069,Pass@123,Finance,Accountant,70750,2026-04-09,EMPLOYEE
+EMP070,Kavya Menon,kavya.menon70@ems.com,9000000070,Pass@123,Operations,Operations Executive,72500,2026-04-10,EMPLOYEE
+EMP071,Yash Agarwal,yash.agarwal71@ems.com,9000000071,Pass@123,Support,Support Engineer,74250,2026-04-11,EMPLOYEE
+EMP072,Tanya Bansal,tanya.bansal72@ems.com,9000000072,Pass@123,IT,System Administrator,76000,2026-04-12,EMPLOYEE
+EMP073,Rajesh Kumar,rajesh.kumar73@ems.com,9000000073,Pass@123,Engineering,Software Engineer,77750,2026-04-13,EMPLOYEE
+EMP074,Simran Kaur,simran.kaur74@ems.com,9000000074,Pass@123,HR,HR Executive,79500,2026-04-14,EMPLOYEE
+EMP075,Karan Shah,karan.shah75@ems.com,9000000075,Pass@123,Sales,Sales Executive,81250,2026-04-15,EMPLOYEE
+EMP076,Pooja Yadav,pooja.yadav76@ems.com,9000000076,Pass@123,Marketing,Marketing Executive,83000,2026-04-16,EMPLOYEE
+EMP077,Harsh Vora,harsh.vora77@ems.com,9000000077,Pass@123,Finance,Accountant,84750,2026-04-17,EMPLOYEE
+EMP078,Riya Bose,riya.bose78@ems.com,9000000078,Pass@123,Operations,Operations Executive,86500,2026-04-18,EMPLOYEE
+EMP079,Aniket Patil,aniket.patil79@ems.com,9000000079,Pass@123,Support,Support Engineer,88250,2026-04-19,EMPLOYEE
+EMP080,Shruti Roy,shruti.roy80@ems.com,9000000080,Pass@123,IT,System Administrator,90000,2026-04-20,EMPLOYEE
+EMP081,Dev Arora,dev.arora81@ems.com,9000000081,Pass@123,Engineering,Software Engineer,91750,2026-05-01,EMPLOYEE
+EMP082,Khushi Tiwari,khushi.tiwari82@ems.com,9000000082,Pass@123,HR,HR Executive,93500,2026-05-02,EMPLOYEE
+EMP083,Ayush Sethi,ayush.sethi83@ems.com,9000000083,Pass@123,Sales,Sales Executive,95250,2026-05-03,EMPLOYEE
+EMP084,Muskan Bhat,muskan.bhat84@ems.com,9000000084,Pass@123,Marketing,Marketing Executive,97000,2026-05-04,EMPLOYEE
+EMP085,Nikhil Pillai,nikhil.pillai85@ems.com,9000000085,Pass@123,Finance,Accountant,98750,2026-05-05,EMPLOYEE
+EMP086,Sneha Das,sneha.das86@ems.com,9000000086,Pass@123,Operations,Operations Executive,100500,2026-05-06,EMPLOYEE
+EMP087,Aman Ghosh,aman.ghosh87@ems.com,9000000087,Pass@123,Support,Support Engineer,102250,2026-05-07,EMPLOYEE
+EMP088,Palak Chopra,palak.chopra88@ems.com,9000000088,Pass@123,IT,System Administrator,104000,2026-05-08,EMPLOYEE
+EMP089,Sahil Sen,sahil.sen89@ems.com,9000000089,Pass@123,Engineering,Software Engineer,105750,2026-05-09,EMPLOYEE
+EMP090,Ishita Sinha,ishita.sinha90@ems.com,9000000090,Pass@123,HR,HR Executive,107500,2026-05-10,EMPLOYEE
+EMP091,Varun Pandey,varun.pandey91@ems.com,9000000091,Pass@123,Sales,Sales Executive,109250,2026-05-11,EMPLOYEE
+EMP092,Ritika Prakash,ritika.prakash92@ems.com,9000000092,Pass@123,Marketing,Marketing Executive,111000,2026-05-12,EMPLOYEE
+EMP093,Om Nanda,om.nanda93@ems.com,9000000093,Pass@123,Finance,Accountant,112750,2026-05-13,EMPLOYEE
+EMP094,Shreya Ali,shreya.ali94@ems.com,9000000094,Pass@123,Operations,Operations Executive,114500,2026-05-14,EMPLOYEE
+EMP095,Abhishek Khan,abhishek.khan95@ems.com,9000000095,Pass@123,Support,Support Engineer,116250,2026-05-15,EMPLOYEE
+EMP096,Nandini More,nandini.more96@ems.com,9000000096,Pass@123,IT,System Administrator,118000,2026-05-16,EMPLOYEE
+EMP097,Farhan Sawant,farhan.sawant97@ems.com,9000000097,Pass@123,Engineering,Software Engineer,119750,2026-05-17,EMPLOYEE
+EMP098,Zoya Shaikh,zoya.shaikh98@ems.com,9000000098,Pass@123,HR,HR Executive,36500,2026-05-18,EMPLOYEE
+EMP099,Rakesh Momin,rakesh.momin99@ems.com,9000000099,Pass@123,Sales,Sales Executive,38250,2026-05-19,EMPLOYEE
+EMP100,Pallavi Pathan,pallavi.pathan100@ems.com,9000000100,Pass@123,Marketing,Marketing Executive,40000,2026-05-20,EMPLOYEE
