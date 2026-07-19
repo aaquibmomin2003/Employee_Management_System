@@ -9,7 +9,6 @@ const sanitize = (employee: any) => {
   return safe;
 };
 
-// Recursive tree builder — given a flat list of employees, nest them by managerId
 interface TreeNode {
   id: string;
   name: string;
@@ -50,7 +49,6 @@ export const getOrganizationTree = async (_req: AuthRequest, res: Response) => {
       },
     });
 
-    // Roots = employees with no manager (e.g. Super Admin at the top)
     const tree = buildTree(employees, null);
 
     res.json({ tree });
@@ -63,7 +61,7 @@ export const getOrganizationTree = async (_req: AuthRequest, res: Response) => {
 // GET /api/employees/:id/reportees
 export const getReportees = async (req: AuthRequest, res: Response) => {
   try {
-    const { id } = req.params;
+    const id = req.params.id as string;
 
     const manager = await prisma.employee.findFirst({ where: { id, isDeleted: false } });
     if (!manager) return res.status(404).json({ message: 'Employee not found' });
@@ -80,13 +78,13 @@ export const getReportees = async (req: AuthRequest, res: Response) => {
 };
 
 const assignManagerSchema = z.object({
-  managerId: z.string().uuid().nullable(), // null = remove manager (make root)
+  managerId: z.string().uuid().nullable(),
 });
 
 // PATCH /api/employees/:id/manager  (Super Admin, HR only)
 export const assignManager = async (req: AuthRequest, res: Response) => {
   try {
-    const { id } = req.params;
+    const id = req.params.id as string;
     const parsed = assignManagerSchema.safeParse(req.body);
     if (!parsed.success) {
       return res.status(400).json({ message: 'Validation failed', errors: parsed.error.flatten() });
