@@ -17,16 +17,14 @@ const sanitize = (employee: any) => {
 // GET /api/employees  (list, with search/filter/sort/pagination)
 export const getEmployees = async (req: AuthRequest, res: Response) => {
   try {
-    const {
-      search,
-      department,
-      role,
-      status,
-      sortBy = 'createdAt',
-      order = 'desc',
-      page = '1',
-      limit = '10',
-    } = req.query as Record<string, string>;
+    const search = req.query.search as string | undefined;
+    const department = req.query.department as string | undefined;
+    const role = req.query.role as string | undefined;
+    const status = req.query.status as string | undefined;
+    const sortBy = (req.query.sortBy as string) || 'createdAt';
+    const order = (req.query.order as string) || 'desc';
+    const page = (req.query.page as string) || '1';
+    const limit = (req.query.limit as string) || '10';
 
     const where: any = { isDeleted: false };
 
@@ -71,7 +69,7 @@ export const getEmployees = async (req: AuthRequest, res: Response) => {
 // GET /api/employees/:id
 export const getEmployeeById = async (req: AuthRequest, res: Response) => {
   try {
-    const { id } = req.params;
+    const id = req.params.id as string;
 
     // Employee role can only view their own profile
     if (req.user!.role === 'EMPLOYEE' && req.user!.id !== id) {
@@ -134,7 +132,7 @@ export const createEmployee = async (req: AuthRequest, res: Response) => {
 // PUT /api/employees/:id  (Super Admin, HR — full edit; Employee — self, limited fields)
 export const updateEmployee = async (req: AuthRequest, res: Response) => {
   try {
-    const { id } = req.params;
+    const id = req.params.id as string;
     const isSelf = req.user!.id === id;
     const isElevated = req.user!.role === 'SUPER_ADMIN' || req.user!.role === 'HR_MANAGER';
 
@@ -191,7 +189,7 @@ export const updateEmployee = async (req: AuthRequest, res: Response) => {
 // DELETE /api/employees/:id  (Super Admin ONLY, soft delete)
 export const deleteEmployee = async (req: AuthRequest, res: Response) => {
   try {
-    const { id } = req.params;
+    const id = req.params.id as string;
 
     const target = await prisma.employee.findFirst({ where: { id, isDeleted: false } });
     if (!target) return res.status(404).json({ message: 'Employee not found' });
